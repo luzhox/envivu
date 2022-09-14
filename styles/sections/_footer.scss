@@ -1,0 +1,104 @@
+.footer {
+  .container {
+    @include media(mobile) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+
+    p.title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 160%;
+      letter-spacing: 0.006em;
+      color: $yellow;
+      margin-right: 12px;
+    }
+
+    &__social {
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      margin-right: 16px;
+      gap: 12px;
+
+      @include media(mobile) {
+        width: 100%;
+      }
+
+      img {
+        height: 40px;
+        width: auto;
+        display: block;
+      }
+    }
+
+    &__phone {
+      @include media(mobile) {
+        width: 100%;
+        margin-top: 24px;
+      }
+
+      h4 {
+        color: white;
+        margin-left: 12px;
+
+        a {
+          color: white;
+          margin-left: 12px;
+        }
+      }
+
+      a {
+        color: white;
+        margin-left: 12px;
+      }
+
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+
+    p {
+      margin-left: 64px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      letter-spacing: 0.006em;
+
+      @include media(mobile) {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+
+      color: #FFFFFF;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+
+    @include media(tablet) {
+      justify-content: space-between;
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+  }
+
+  background: #081143;
+}

@@ -1,0 +1,46 @@
+.menu {
+  background: #060d36;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(mobile) {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    @include media(tablet) {
+      width: 100%;
+
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+  ul {
+    li {
+      list-style: none;
+
+      a {
+        padding: 10px 16px;
+        font-size: 16px;
+        line-height: 20px;
+        background: white;
+        color: #3749AD;
+        border-radius: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  h1 {
+    display: none;
+  }
+}

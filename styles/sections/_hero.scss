@@ -1,0 +1,75 @@
+.hero {
+  background: #0E1954;
+
+  .container {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    padding-top: 80px;
+
+    @include media(tablet) {
+      padding-top: 130px;
+    }
+  }
+
+  &__text {
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 32px;
+      color: white;
+      margin-bottom: 24px;
+
+
+      @include media(tablet) {
+        font-size: 34px;
+        line-height: 48px;
+      }
+
+      strong {
+        color: #FFE663;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: white;
+      margin-bottom: 24px;
+    }
+
+    @include media(tablet) {
+      width: col(12, 31);
+      margin-left: col(3, 31);
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+    @include media(mobile) {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include media(tablet) {
+        width: 100%;
+      }
+    }
+
+    @include media(tablet) {
+      width: col(10.5, 31);
+      margin-left: col(2, 31);
+    }
+  }
+}

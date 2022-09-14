@@ -1,0 +1,173 @@
+.inscription {
+  background: #0E1954;
+
+  &__svg {
+    position: relative;
+
+    @include media (tablet) {
+      top: -68px;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-flow: wrap-reverse;
+    padding-top: 32px;
+
+    @include media (tablet) {
+      padding-top: 32px;
+      padding-bottom: 0px;
+      flex-flow: wrap;
+    }
+  }
+
+  &__img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @include media(tablet) {
+      width: col(12, 31);
+      margin-left: col(2, 31);
+    }
+  }
+
+  &__form {
+    margin-left: 0px;
+
+    &__group {
+
+
+      &__field {
+        display: flex;
+        justify-content: space-between;
+
+        &.business {
+          width: 100%;
+
+          input {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            margin-bottom: 12px;
+          }
+        }
+
+        input {
+          color: white;
+          border-bottom: 1px solid #FFEF55;
+          background: transparent;
+          width: calc(50% - 12px);
+          -webkit-appearance: none;
+          appearance: none;
+        }
+      }
+    }
+
+    &__select {
+      position: relative;
+
+      &__header {
+        background: transparent;
+        color: white;
+        border-bottom: 1px solid #FFEF55;
+        width: 100%;
+        padding-bottom: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+
+      &__content {
+        height: 140px;
+        overflow-y: scroll;
+        position: absolute;
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+
+        &.active {
+          max-height: 100rem;
+        }
+
+        button {
+          width: 100%;
+          background: white;
+          color: #0E1954;
+          border-bottom: 1px solid #0E1954;
+          display: block;
+          padding: 4px;
+        }
+      }
+    }
+
+    &__checkbox {
+      display: flex;
+      gap: 16px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+
+      p {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 18px;
+        color: white;
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: #FFEE4D;
+    }
+
+    textarea {
+      width: 100%;
+      height: 85px;
+      border-radius: 8px;
+      border: 1px solid #FFEF55;
+      background: transparent;
+      padding: 12px;
+      color: white;
+      resize: none;
+    }
+
+    input[type="submit"] {
+      cursor: pointer;
+      width: 100%;
+      padding: 12px 16px;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      display: block;
+      width: 100%;
+      color: #FFFFFF;
+      margin-top: 12px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    @include media(tablet) {
+      width: col(9, 31);
+      margin-left: col(5, 31);
+    }
+  }
+}

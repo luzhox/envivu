@@ -1,0 +1,184 @@
+@import "_grid";
+@import "_variables";
+@import "_icons";
+@import "_buttons";
+@import "inputs";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    font-family: $primary-text;
+    font-weight: 400;
+    outline: 0px;
+    scroll-behavior: smooth;
+}
+
+.btn__whatsapp {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+    color: $gray;
+    letter-spacing: -0.4px;
+}
+
+#contenido {
+    overflow-x: hidden;
+    margin-top: 75px;
+
+    @include media(desktopmini) {
+        overflow: initial;
+        margin-top: 108px;
+    }
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    background: #0E1954;
+    scroll-behavior: smooth;
+
+    &.fixed {
+        position: fixed;
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+h1.title {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: -0.6px;
+
+    @include media(tablet) {
+        font-size: 45px;
+        text-align: left;
+        font-weight: 700;
+        font-family: $primary-text;
+    }
+}
+
+span.title {
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: -0.8px;
+    color: $gray;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include media(tablet) {
+        text-align: left;
+        font-size: 24px;
+    }
+}
+
+h4.title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: $gray;
+
+    @include media(tablet) {
+        font-size: 14px;
+    }
+}
+
+p {
+    font-family: $primary-text;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 34px;
+    color: $gray;
+
+    @include media(tablet) {
+        font-size: 24px;
+    }
+}
+
+.line {
+    height: 4px;
+    width: 80px;
+    background-color: $yellow;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.hide-on-small-only {
+    display: none !important;
+
+    @include media(tablet) {
+        display: block !important;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.hide-on-medium-only {
+    display: none !important;
+
+    @include media(tablet) {
+        display: block !important;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: $gray3 !important;
+    border: 1px solid $gray3;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $yellow !important;
+    border: 1px solid $yellow;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.right {
+    text-align: right;
+}
